@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Freelancer Web Template</title>
+    
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/d4408de37a.js" crossorigin="anonymous"></script>
+    
+    <style>
+    * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 6px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	text-align: center;
+}
+
+.btn-large {
+	font-size: 2rem;		
+	padding: 2.2rem 1.6rem;
+}
+
+.btn {
+	margin-top:4rem; 	
+	font-weight: 400;
+	display: inline-block;
+	border:2px solid transparent;
+	border-radius: .4rem;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.btn-social {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.btn-download{	
+	color:#fff;
+	border-color: #fff;	
+	background-color: transparent;
+}
+
+.btn-download:hover {
+	color: #212529;
+	background-color: #fff;	
+}
+
+.btn-send {
+	background-color: #18BC9C;
+	border-color: #18BC9C;
+	color: #fff;
+	padding: 1.2rem 1rem;
+}
+
+.btn-send:hover {
+	background-color: #128f76;
+	border-color: #128f76;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.col {
+	float: left;
+	width: 100%;	
+	padding: 1rem;
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+@media (min-width: 576px) {
+	
+	.container {
+		max-width: 540px;
+	}
+	
+	html {
+		font-size: 7px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+	
+	html {
+		font-size: 8px;
+	}
+	
+	.col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;	
+	}
+	
+	html {
+		font-size: 9px;
+	}
+	
+	.col {
+		width: 33.33333%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	
+	html {
+		font-size: 10px;
+	}
+}
+
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+/*navbar*/
+
+nav {
+	width: 100%;
+	font-family: Montserrat;
+	background-color: #2C3E50;
+	color: #fff;
+	padding-top: 2.4rem;
+	padding-bottom: 2.4rem;
+	position: fixed;
+	z-index: 500;
+}
+
+#logo-box {
+	float: left;
+	padding-top: .5rem;
+}
+
+#logo-box .logo {
+	color: #fff;
+	font-weight: 700;
+	font-size: 3.2rem;
+}
+
+#nav-links {
+	float: right;
+}
+
+#nav-links .nav-item {
+	float: left;
+	margin: .4rem;
+}
+
+#nav-links .nav-link {
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 700;
+	display: block;
+	padding: 1.6rem;
+	letter-spacing: .1rem;
+	transition: color .3s;
+}
+
+#nav-links .nav-link:hover {
+	color: #18bc9c;
+}
+
+#nav-links .nav-icon {
+	display: none;
+}
+
+@media (max-width: 992px) {
+	
+	#logo-box {
+		float: none;
+		text-align: left;
+		
+	}
+	#nav-links {
+		float: none;
+	}	
+	
+	
+	#nav-links.responsive li:not(:first-child) {
+		display: none;
+	}
+	
+	#nav-links .nav-link {
+		font-size: 2rem;
+		padding-left: 0;
+	}
+	
+	#nav-links .nav-item {
+		float: none;
+		text-align: left;
+	}
+	
+	#nav-links .nav-icon {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 5px;
+		font-size: 3rem;
+	}
+}
+
+
+
+/*Header*/
+
+header {
+	background-color: #18BC9C;
+	padding-top:calc(112px + 10rem); 
+	padding-bottom: 112px;
+	text-align: center;
+}
+
+header h1 {
+	color:  #fff;
+	font-size: 7.6rem;
+}
+
+header h2 {
+	color: #fff;
+	font-size: 2.8rem;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+hr.star-light {
+	border-color: #fff;
+}
+
+hr.star-dark {
+	border-color: #2C3E50;
+}
+
+.star-light, .star-dark {
+	border: none;
+	border-top: .4rem solid;
+	max-width: 25rem;
+	margin: 3rem auto;
+	padding: 5px;
+	overflow: visible;
+	height: 0;
+}
+
+.star-light::after {
+	color: #fff;
+	background-color: #18BC9C;
+}
+
+.star-dark::after {
+	color: #2C3E50;
+	background-color: #fff;
+}
+
+.star-light::after, .star-dark::after {
+	content: "\f005";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 3rem;
+	position: relative;
+	padding: 0 8px;
+	top: -3rem;
+}
+
+/* Portfolio */
+
+#portfolio {
+}
+
+#portfolio h2 {
+	font-size: 4.8rem;
+	color: #2C3E50;
+}
+
+
+
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-item img {
+	display: block;	
+}
+
+
+.img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #18BC9C;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+
+
+.img-overlay .icon {
+	color: #fff;
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.portfolio-item:hover .img-overlay {
+	opacity: 0.8;
+}
+
+/*about*/
+#about {
+	background-color: #18BC9C;
+	color: #fff;
+}
+
+#about h2 {
+	font-size: 4.8rem;
+}
+
+#about-text {
+	text-align: left;
+}
+
+#about-text .left {
+	float: none;
+	width: 100%;
+	padding-right: 5px;
+	padding-left: 25px;
+}
+
+#about-text .right {
+	float: none;
+	width: 100%;
+	padding-right: 5px;
+	padding-left: 25px;
+}
+
+#about-text .text{
+	font-size: 2rem;
+}
+
+
+@media (min-width: 992px) {
+	#about-text .left {
+		float: left;
+		width: 50%;
+		padding-right: 10px;
+		padding-left: 210px;
+	}
+
+	#about-text .right {
+		float: right;
+		width: 50%;
+		padding-right: 210px;
+		padding-left: 10px;
+	}
+}
+
+
+
+/*contact*/
+
+#contact {
+}
+
+#contact h2 {
+	font-size: 4.8rem;
+	color: #2C3E50;
+}
+
+#contact-form {
+	width: 70%;
+	margin: 0 auto;	
+	text-align: left;
+}
+
+.form-group {
+	border-bottom: 1px solid #e9ecef;
+	padding-bottom: 3rem;
+	margin-bottom: 4rem;
+}
+
+
+.form-group input,.form-group textarea {
+	border: none;
+	width: 100%;
+	display: block;
+	font-size: 2.4rem;
+}
+
+.form-group input:focus {
+	outline: 0;
+}
+
+footer {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-color: #2C3E50;
+	color: #fff;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 2.4rem;
+}
+
+footer p {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+footer li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.copyright {
+	background-color: #1A252F;
+	padding-top: 2.4rem;
+	padding-bottom: 2.4rem;
+	color: #fff;
+	text-align: center;
+}
+
+    </style>
+    
+</head>
+<body>
+    <nav>
+       <div class="container clearfix">
+          <div id="logo-box">
+              <a href="/" class="logo text-uppercase">
+                  Start Bootstrap
+              </a>
+          </div> 
+          
+          <div id="nav-links" class="responsive">
+              <ul>
+                 <li class="nav-item">
+                      <a href="#" class="nav-link text-uppercase nav-icon">
+                          <i class="fas fa-bars"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link text-uppercase">
+                          Portfolio
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link text-uppercase">
+                          About
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link text-uppercase">
+                          Contact
+                      </a>
+                  </li>
+              </ul>
+          </div> 
+       </div>  
+    </nav>
+    
+    
+    <header>
+        <div class="container">
+            <img id="profile-image" src="img/profile.png" alt="" class="img-fluid">
+            <h1 class="text-uppercase">Start Boostrap</h1>
+            <hr class="star-light">
+            <h2>
+            Web Developer - Graphic Artist - User Experience Designer</h2>
+        </div>
+    </header>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase">
+                Portfolio
+            </h2>
+            <hr class="star-dark">
+            
+            <div id="portfolio-images" class="clearfix">
+              <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/cabin.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+               <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/cake.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+               <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/circus.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+               <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/game.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+               <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/submarine.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+               <div class="col">
+                  <div class="portfolio-item">
+                      
+                      <a href="#">
+                          <img src="img/safe.png" alt="" class="img-fluid">
+                          
+                          <div class="img-overlay">
+                              <div class="icon">
+                                  <i class="fas fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          
+                      </a>
+                      
+                  </div>
+              </div>
+                
+                 
+                  
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2 class="text-uppercase">About</h2>
+        <hr class="star-light">
+        
+        <div class="about-text clearfix">
+            
+            <div class="left">
+                <p class="text">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            </div>
+            <div class="right">
+                <p class="text">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+            
+        </div>
+        
+        <button class="btn btn-download btn-large">
+            <i class="fas fa-download"></i>
+            Download Now!
+        </button>
+        
+    </section>
+    
+    <section id="contact">
+       <div class="container">
+        <h2 class="text-uppercase">
+            Contact Me
+        </h2>
+        <hr class="star-dark">
+        
+        <form id="contact-form">
+            
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="email" placeholder="Email Adress">
+            </div>
+            <div class="form-group">
+                <input type="text" id="phone" placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Message"></textarea> 
+            </div>
+            <div class="form-group">
+            <button class="btn btn-send">
+               Send
+        </button>
+            </div>
+        </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container clearfix">
+            
+            <div class="col">
+                <h4 class="text-uppercase">
+                    Location
+                </h4>
+                <p>
+                    2215 John Daniel Drive Clark, MO 65243
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">
+                    Around the web
+                </h4>
+                <ul>
+                    <li>
+                        <button class="btn btn-social btn-download">
+                            <i class="fab fa-fw fa-facebook-f"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-social btn-download">
+                            <i class="fab fa-fw fa-google-plus-g"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-social btn-download">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-social btn-download">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-social btn-download">
+                            <i class="fab fa-fw fa-dribbble"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">
+                    About Freelancer
+                </h4>
+                <p>
+                    Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <div class="copyright">
+        <div class="container">
+            <small>
+                Copyright © Your Website 2018
+            </small>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script>    
+    
+    $('.nav-icon').click(function () {
+			$('#nav-links').toggleClass("responsive");
+			return false;
+		});
+
+    
+    
+    </script>
+    
+    
+</body>
+</html>

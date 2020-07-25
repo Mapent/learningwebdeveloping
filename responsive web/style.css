@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2.1rem;
+    padding: 2rem 0;
+}
+
+/*header*/
+
+header {
+    height: 50rem;
+
+
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(img/bg.jpeg);
+    background-size: cover;
+    height: 50rem;
+    background-position: center;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+header .content {
+    padding: 2rem;
+}
+
+header .h1 {
+    padding: 11rem;
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+.btn {
+    color: white;
+    background-color: #333;
+    border: 1px solid #666;
+    padding: 2rem 4rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #eaeaea;
+    color: #333;
+}
+
+/*main*/
+/*section a*/
+.section-a {
+    height: 16rem;
+    background-color: #eaeaea;
+    z-index: -1;
+    color: black;
+    padding: 3rem 0;
+}
+
+.section-a h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/*section b*/
+
+.section-b{
+    
+}
+
+.cards{
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    
+    width: 95%;
+    text-align: center;
+    padding: 0 0rem;
+    display: inline-block;
+    margin-top: 2rem;
+    
+}
+
+.cards img{
+    width: 100%;
+}
+.card-content{
+    padding: 5rem;
+}
+
+/*section c*/
+.section-c{
+    
+    margin-top: 5.5rem;
+    background: #EAEAEA;
+    color: #333;
+    padding: 7rem 0;
+}
+.section-body{
+    margin-top: 3rem;
+    padding: 0rem 2rem;
+    
+}
+.section-body h2{
+    font-weight: 900;
+}
+
+/*section d*/
+.box{
+    padding: 6rem;
+    
+}
+.box:first-child{
+    background: #2690D4;
+}
+/*footer*/
+footer{
+    background-color: black;
+    padding: 3rem;
+    
+}
+footer a{
+    color: #0865D4;
+}
+
+
+
+
+
+@media screen and (min-width: 800px){
+    .section-b .cards{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
+
